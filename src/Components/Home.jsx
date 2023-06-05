@@ -4,9 +4,23 @@ import CategoryImgTwo from "../img/categories/category-2.jpg"
 import CategoryImgThree from "../img/categories/category-3.jpg"
 import CategoryImgFour from "../img/categories/category-4.jpg"
 import CategoryImgFive from "../img/categories/category-5.jpg"
+import DiscountImg from "../img/discount.jpg";
 import ProductCard from "./ProductCard";
+import "../../node_modules/react-slick/dist/react-slick"
+import React from "react";
+import Slider from "react-slick";
+import SmallProductCard from "./SmallProductCard";
 
 const Home = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed:3000
+      };
     return (
         <>
             <div className="d-flex container-fluid flex-row section-one">
@@ -62,7 +76,98 @@ const Home = () => {
                     <ProductCard />
                     <ProductCard />
                     <ProductCard/>
+                </div>            
+            </div>
+            <div className=" container-fluid section-three mt-5">
+                <div className="section-three-slider w-25 mx-auto">
+                <Slider {...settings}>
+      <div>
+          <span>The Chloe Collection </span>
+        <h1>The Project Jacket</h1>
+         <Link to="/shop-now">Shop now</Link>
+      </div>
+      <div>
+          <span>The Chloe Collection </span>
+        <h1>The Project Jacket</h1>
+         <Link to="/shop-now">Shop now</Link>
+      </div>
+      
+      <div>
+          <span>The Chloe Collection </span>
+        <h1>The Project Jacket</h1>
+         <Link to="/shop-now">Shop now</Link>
+      </div>
+      
+    </Slider>
+          </div>
+            </div>
+            <div className="d-flex flex-column section-four w-75 mx-auto  mt-5">
+             
+                <div className="d-flex flex-row justify-content-between">
+                    <span>HOT TREND</span>
+                    <span>BEST SELLER</span>
+                    <span>FEATURE</span>
                 </div>
+                <div className="d-flex flex-row flex-wrap justify-content-between  mt-5 ">
+                    <SmallProductCard />
+                    <SmallProductCard />
+                    <SmallProductCard />
+                    <SmallProductCard />
+                    <SmallProductCard />
+                    <SmallProductCard />
+                    <SmallProductCard />
+                    <SmallProductCard />
+                    <SmallProductCard/>
+                </div>
+            
+            </div>
+            <div className="d-flex flex-row section-five mt-5 w-75 mx-auto justify-content-between">
+                <div className="w-50">
+                <img className="" src={DiscountImg}></img>
+             </div>
+                <div className="w-50 summer-sale">
+                        <div className="circle"></div>
+                </div>
+
+            </div>
+            <div className="d-flex flex-row section-six w-75 mt-5 mx-auto justify-content-between">
+                <div className="d-flex flex-row ccard "  >
+                    <div className="w-25">
+                        icon
+                   </div>
+                    <div className="w-75 justify-content-center p-1">
+                        <span className=""> Free Shipping </span>
+                        <span> For all oder over $99</span>
+                    </div>
+                </div>
+                <div className="d-flex flex-row ccard "  >
+                    <div className="w-25">
+                        icon
+                   </div>
+                    <div className="w-75 justify-content-center p-1">
+                        <span className="solid"> Free Shipping </span>
+                        <span> For all oder over $99</span>
+                    </div>
+                </div>
+                <div className="d-flex flex-row ccard "  >
+                    <div className="w-25">
+                        icon
+                   </div>
+                    <div className="w-75 justify-content-center p-1">
+                        <span className="solid"> Free Shipping </span>
+                        <span> For all oder over $99</span>
+                    </div>
+                </div>
+                <div className="d-flex flex-row ccard "  >
+                    <div className="w-25">
+                        icon
+                   </div>
+                    <div className="w-75 justify-content-center p-1">
+                        <span className="solid"> Free Shipping </span>
+                        <span> For all oder over $99</span>
+                    </div>
+                </div>
+          
             </div>
         </>
     )
