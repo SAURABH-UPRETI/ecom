@@ -6,7 +6,7 @@ Navbar css
 
 */
 
-.nav ul{
+ ul{
   list-style: none;
   color: black;
 }
@@ -19,6 +19,7 @@ Navbar css
 
 .nav ul li a:hover{
     border-bottom: 3px solid rgb(202,21,21);   
+    color: blue;
 }
 .section-one{
   -webkit-box-shadow: inset 2px 16px 5px -5px rgba(245,245,245,1);
@@ -36,4 +37,44 @@ box-shadow: inset 2px 16px 5px -5px rgba(245,245,245,1);
 
 .section-one .part-two img{
   width: 100%;
+}
+
+.section-two{
+  width: 80%;
+  margin: auto;
+}
+.section-two .custom-h3{
+  border-bottom: 3px solid rgb(202,21,21);
+  margin-right: 10px;   
+}
+
+.section-two ul li a:link{
+  text-decoration: none;
+}
+.section-two ul li a:hover{
+  border-bottom: 3px solid rgb(202,21,21);
+}
+
+.product-card{
+  height: 28rem;
+  cursor: pointer;
+}
+.product-card .product-img{
+  height: 80%;
+  overflow: hidden;
+}
+.product-card .product-img img{
+  width: 100%;
+  height: 100%;
+}
+.product-card .product-img .moving-div{
+  width: 100%;
+  height: 2rem;
+  border: 2px solid blue;
+  transition: 1s;
+  bottom: -10%;
+}
+.product-card:hover .moving-div{
+      bottom: 10%;
+     transition: 1s;
 }
