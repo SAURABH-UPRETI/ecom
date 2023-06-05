@@ -1,11 +1,15 @@
 import { BrowserRouter as Router, Route, Link, Switch, Routes } from "react-router-dom";
 import Home from "./Home";
+import Logo from "../img/logo.png"
+import ProductDetails from "./ProductDetails";
 const Navbar = () => {
     return (
         <>
             <div className="nav d-flex flex-row">
-                <div className="w-25 border p-3">logo</div>
-                <div className="w-50 border ">
+                <div className="w-25 p-3">
+                    <img src={Logo}></img>
+                </div>
+                <div className="w-50">
                     <ul className="d-flex flex-row justify-content-start p-3 text-uppercase">
                         <li className="p-2">
                             <Link to="/">Home</Link>
@@ -31,7 +35,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 
-                <div className="w-25 border d-flex flex-row justify-content-between p-4">
+                <div className="w-25 d-flex flex-row justify-content-between p-4">
                     <div className="justify-content-center ">
                         <p>login/Register</p>
                     </div>
@@ -42,7 +46,8 @@ const Navbar = () => {
                 </div>
                 
                 <Routes>
-                    <Route exact path="/" element={<Home></Home>}></Route>
+                <Route exact path="/" element={<Home></Home>}></Route>
+                <Route exact path="/product-detail" element={<ProductDetails/>}></Route>
 
                 </Routes>
              
