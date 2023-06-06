@@ -10,6 +10,11 @@ Navbar css
   list-style: none;
   color: black;
 }
+.nav{
+  -webkit-box-shadow: 1px 7px 5px 0px rgba(232,227,232,1);
+  -moz-box-shadow: 1px 7px 5px 0px rgba(232,227,232,1);
+  box-shadow: 1px 7px 5px 0px rgba(232,227,232,1);
+}
 .nav ul li a:link{
   cursor: pointer;
   text-decoration: none;
@@ -21,11 +26,7 @@ Navbar css
     border-bottom: 3px solid rgb(202,21,21);   
     color: blue;
 }
-.section-one{
-  -webkit-box-shadow: inset 2px 16px 5px -5px rgba(245,245,245,1);
--moz-box-shadow: inset 2px 16px 5px -5px rgba(245,245,245,1);
-box-shadow: inset 2px 16px 5px -5px rgba(245,245,245,1);
-}
+
 
 .section-one .part-one img{
   width: 100%;
@@ -77,4 +78,99 @@ box-shadow: inset 2px 16px 5px -5px rgba(245,245,245,1);
 .product-card:hover .moving-div{
       bottom: 10%;
      transition: 1s;
+}
+
+.section-three{
+  border: 1px solid transparent;
+  height: 25rem;
+  background-size: contain;
+  background-image: url("./img/banner/banner-1.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.section-three .section-three-slider{
+ border: 1px solid;
+  margin-top: 8%;
+}
+
+.section-four span{
+    font-size: 2rem;
+    border-bottom: 3px solid rgb(202,21,21);
+}
+.small-product-card{
+  height: 7rem;
+  width: 20rem;
+}
+.small-product-card img{
+    width: 50%;
+}
+.small-product-card span{
+  font-size: 1rem;
+  border: none;
+
+}
+
+.section-five img {
+  width: 100%;
+}
+.section-five .summer-sale{
+   background-color: rgb(244,244,244);
+   position: relative;
+}
+.section-five .summer-sale .circle{
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  background-color: white;
+}
+.section-six .ccard div{
+      height: 4rem;
+}
+
+.product-slider{
+  width: fit-content;
+  height: fit-content;
+  width: 30%;
+}
+.product-slider.carousel-status{
+  display: none !important;
+}
+.product-slider .slide >img{
+   height: 60vh !important;
+}
+
+.product-details-cart{
+  height: 3rem;
+}
+.product-details-cart .one{
+  width: 20%;
+}
+.product-details-cart .two{
+  width: 20%;
+  border-radius: 1.5rem 1.5rem;
+  border: 1px solid rgb(193, 191, 191);
+}
+.product-details-cart .two span{
+  padding: .5rem;
+}
+.product-details-cart .two button{
+  background-color: white;
+  margin: .5rem;
+  border: none;
+}
+.product-details-cart .three{
+  width: 25%;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(202,21,21);
+  border-radius: 1.5rem  1.5rem ;
+}
+.product-details-cart .four,.five{
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 3rem;
 }
