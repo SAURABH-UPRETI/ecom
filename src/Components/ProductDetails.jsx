@@ -10,6 +10,24 @@ import { Label } from "@mui/icons-material";
 import { useState } from "react";
 
 function ProductDetails() {
+    const rev = " Review"
+    const des = " description"
+    const spec = "specification "
+    const revHeading = " Review"
+    const desHeading = " Description"
+    const specHeading = "Specification "
+    const [checkedStock, setCheckedStock] = React.useState(false);
+    const [checkedColorOne, setCheckedColorOne] = React.useState(false);
+    const [checkedColorTwo, setCheckedColorTwo] = React.useState(false);
+    const [checkedColorThree, setCheckedColorThree] = React.useState(false);
+    const [quantity, setQuantity] = useState(0);
+    const [Specification, setSpecification] = useState("");
+    const [Review, setReview] = useState("");
+    const [Description, setDescription] = useState(des);
+    const [SpecificationHeading, setSpecificationHeading] = useState("");
+    const [ReviewHeading, setReviewHeading] = useState("");
+    const [DescriptionHeading, setDescriptionHeading] = useState(desHeading);
+   
     const images = [
         ProductImage1,
         ProductImage2,
@@ -17,7 +35,7 @@ function ProductDetails() {
         ProductImage4
     ];
 
-    const [quantity, setQuantity] = useState(0);
+
     const HandleIncrement = () => {
         setQuantity(function (prevCount) {
             return (prevCount += 1);
@@ -32,10 +50,6 @@ function ProductDetails() {
             }
           });
     }
-    const [checkedStock, setCheckedStock] = React.useState(false);
-    const [checkedColorOne, setCheckedColorOne] = React.useState(false);
-    const [checkedColorTwo, setCheckedColorTwo] = React.useState(false);
-    const [checkedColorThree, setCheckedColorThree] = React.useState(false);
 
     const handleChangeStock = () => {
       setCheckedStock(!checkedStock);
@@ -49,6 +63,30 @@ function ProductDetails() {
     const handleChangeColorThree = () => {
         setCheckedStock(!checkedColorThree);
     };
+    const handleChangeSpecification = () => {
+        setSpecification(spec);
+        setDescription("");
+        setReview("")
+        setSpecificationHeading(specHeading);
+        setDescriptionHeading("")
+        setReviewHeading("")
+    }
+    const handleChangeDescription = () => {
+        setDescription(des);
+        setSpecification("");
+        setReview("")
+        setDescriptionHeading(desHeading)
+        setSpecificationHeading("")
+        setReviewHeading("")      
+    }
+    const handleChangeReview = () => {
+        setReview(rev);
+        setDescription("");
+        setSpecification("")
+        setReviewHeading(revHeading)
+        setDescriptionHeading("")
+        setSpecificationHeading("")
+    }
     
   return (
       <>
@@ -107,6 +145,25 @@ function ProductDetails() {
 
                               Free shipping</span></div>
                   </div>
+              </div>
+          </div>
+          <div className="d-flex mt-5 product-review flex-column">
+              <div className="d-flex product-review-head w-75 mx-auto  justify-content-around">
+                  <span onClick={handleChangeDescription}>Description</span>
+                  <span onClick={handleChangeSpecification}>Specification</span>
+                  <span onClick={handleChangeReview}>Review(2)</span>
+                  
+              </div>
+              <div className="d-flex flex-column w-75 mx-auto text-start mt-5">
+                  <h4> {SpecificationHeading}
+                      {DescriptionHeading}
+                      {ReviewHeading}
+                  </h4>
+                  <p className="mt-2">
+                      {Specification}
+                      {Description}
+                      {Review}
+                  </p>
               </div>
           </div>
       </>

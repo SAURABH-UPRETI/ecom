@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Link, Switch, Routes } from "react-rout
 import Home from "./Home";
 import Logo from "../img/logo.png"
 import ProductDetails from "./ProductDetails";
+import ShopCart from "./ShopCart";
 const Navbar = () => {
     return (
         <>
@@ -47,7 +48,8 @@ const Navbar = () => {
                 
                 <Routes>
                 <Route exact path="/" element={<Home></Home>}></Route>
-                <Route exact path="/product-detail" element={<ProductDetails/>}></Route>
+                <Route exact path="/product-detail" element={<ProductDetails />}></Route>
+                <Route exact path="/cart" element={<ShopCart/>}></Route>
 
                 </Routes>
              
