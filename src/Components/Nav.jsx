@@ -6,6 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./Home";
+import Blog from "./Blog";
 const Navbar = () => {
   return (
     <>
@@ -49,6 +50,7 @@ const Navbar = () => {
 
       <Routes>
         <Route exact path="/" element={<Home></Home>}></Route>
+        <Route exact path="blog" element={<Blog />} />
       </Routes>
     </>
   );
