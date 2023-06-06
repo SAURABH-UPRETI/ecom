@@ -174,3 +174,8 @@ Navbar css
   cursor: pointer;
   width: 3rem;
 }
+ .product-spec .product-color >input{
+   width: 2rem !important;
+   height: 1rem;
+   cursor: pointer;
+}

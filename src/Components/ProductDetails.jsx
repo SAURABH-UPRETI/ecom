@@ -7,6 +7,7 @@ import ProductImage3 from "../img/product/details/product-3.jpg"
 import ProductImage4 from "../img/product/details/product-4.jpg"
 import { CheckBox } from "@mui/icons-material";
 import { Label } from "@mui/icons-material";
+import { useState } from "react";
 
 function ProductDetails() {
     const images = [
@@ -15,6 +16,40 @@ function ProductDetails() {
         ProductImage3,
         ProductImage4
     ];
+
+    const [quantity, setQuantity] = useState(0);
+    const HandleIncrement = () => {
+        setQuantity(function (prevCount) {
+            return (prevCount += 1);
+          });
+    }
+    const HandleDecrement = () => {
+        setQuantity(function (prevCount) {
+            if (prevCount > 0) {
+              return (prevCount -= 1); 
+            } else {
+              return (prevCount = 0);
+            }
+          });
+    }
+    const [checkedStock, setCheckedStock] = React.useState(false);
+    const [checkedColorOne, setCheckedColorOne] = React.useState(false);
+    const [checkedColorTwo, setCheckedColorTwo] = React.useState(false);
+    const [checkedColorThree, setCheckedColorThree] = React.useState(false);
+
+    const handleChangeStock = () => {
+      setCheckedStock(!checkedStock);
+    };
+    const handleChangeColoreOne = () => {
+        setCheckedStock(!checkedColorOne);
+    };
+    const handleChangeColorTwo = () => {
+        setCheckedStock(!checkedColorTwo);
+    };
+    const handleChangeColorThree = () => {
+        setCheckedStock(!checkedColorThree);
+    };
+    
   return (
       <>
           <div className="d-flex flex-row w-75 mx-auto mt-5">
@@ -41,9 +76,9 @@ function ProductDetails() {
                           <span>Quantity</span>
                       </div>
                       <div className="d-flex flex-row justify-content-between two">
-                          <button>-</button>
-                          <span>1</span>
-                          <button>+</button>
+                          <button onClick={HandleDecrement}>-</button>
+                          <span>{ quantity}</span>
+                          <button onClick={HandleIncrement}>+</button>
                       </div>
                       <div className="three text-center p-2">
                           <span>ADD TO CART</span>
@@ -51,9 +86,26 @@ function ProductDetails() {
                       <div className="four"></div>
                       <div className="five"></div>
                   </div>
-                  <hr className="mt-5" />
-                  <div className="d-flex  flex-column size">
-                      <div ><span>Availability:</span> <span><CheckBox {...Label} defaultChecked /> In Stock</span></div>
+                  <hr className="mt-5"/>
+                  <div className="d-flex  flex-column size product-spec mt-5">
+                      <div className=" d-flex w-50 justify-content-between" >
+                          <span>Availability:</span>
+                          <span><input type="checkbox" checkedStock={checkedStock} onChange={handleChangeStock}/> In Stock</span></div>
+                      <div className=" d-flex w-50 justify-content-between mt-1" >
+                          <span>Available color:</span>
+                          <span className="product-color">
+                          <input type="checkbox" checkedColorOne={checkedColorOne} onChange={handleChangeColoreOne}/> 
+                          <input type="checkbox" checkedColorTwo={checkedColorTwo} onChange={handleChangeColorTwo}/> 
+                          <input type="checkbox" checkedColorThree={checkedColorThree} onChange={handleChangeColorThree} />
+                          </span>
+                      </div>
+                      <div className=" d-flex w-50 justify-content-between mt-1" >
+                          <span>Available size:</span>
+                          <span> XS  S  M L</span></div>
+                      <div className=" d-flex w-50 justify-content-between mt-1" >
+                          <span>Promotions:</span> <span>
+
+                              Free shipping</span></div>
                   </div>
               </div>
           </div>
