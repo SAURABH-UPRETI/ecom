@@ -1,0 +1,36 @@
+*{
+    text-align:justify;
+}
+.Footer-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Footer-image img{
+    width: 20%;
+}
+.Footer-image img:hover{
+    opacity: 0.5;
+}
+p{
+    color: rgb(81, 80, 80);
+}
+a{
+    text-decoration: none;
+    color: rgb(81, 80, 80);
+}  
+.hover-item{
+    display: none;
+}
+
+.hover-item:hover{
+    display:block;
+}
+.ICONS svg{
+    background-color: rgb(214, 216, 217);
+    margin: 9px;
+    padding: 8px;
+    font-size:40px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
