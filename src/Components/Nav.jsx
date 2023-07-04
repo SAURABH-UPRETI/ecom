@@ -49,8 +49,8 @@ const Navbar = () => {
                     </div>
                     <div className="d-flex justify-content-around w-50 ">
                     <div className=""><Link to="/search"><SearchSharpIcon/></Link></div>
-                    <div><Link to="/fav"><FavoriteBorderSharpIcon/></Link></div>
-                    <div><Link to="/cart"><ShoppingCartSharpIcon/></Link></div>
+                    <div><Link to="/fav"><FavoriteBorderSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
+                    <div><Link to="/cart"><ShoppingCartSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
                     
                    </div>
                </div>

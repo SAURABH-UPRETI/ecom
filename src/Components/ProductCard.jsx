@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Link, Switch, Routes } from "react-router-dom";
 import ProductImgOne from "../img/product/product-1.jpg"
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -5,7 +6,7 @@ import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 const ProductCard = () => {
     return (
         <>
-            <div className=" d-flex flex-column product-card ">
+          <div className=" d-flex flex-column product-card ">
                 <div className="product-img position-relative">
                     <img src={ProductImgOne}></img>
                     <div className="d-flex flex-row moving-div position-absolute justify-content-around">
@@ -22,12 +23,13 @@ const ProductCard = () => {
                     </div>
                 </div>
                 <div className="d-flex flex-column justify-content-center">
-                <span className="mt-2">Buttons tweed blazer</span>
+                <Link to="/product-detail"> <span className="mt-2">Buttons tweed blazer</span></Link>
                 <span>stars</span>
                 <span>prise</span>
                 </div>
                
-        </div>
+            </div>
+            
         </>
     )
 }

@@ -326,3 +326,28 @@ padding: 4%;
   font-size: 1.7rem !important;
   cursor: pointer;
 }
+.page-num{
+  width: fit-content;
+  margin: auto;
+}
+.shop-custom-dropdown{
+  border: 1px solid;
+  width: 100%;
+  height: 2.5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.shop-custom-dropdown .icon-span{
+    transform: rotate(270deg);
+    float: right;
+}
+
+.updated-shop-custom-dropdown{
+  height: fit-content;
+  /* transition: all 2s ease; */
+  
+}
+.updated-shop-custom-dropdown .icon-span{
+  transform: rotate(270deg);
+  float: right;
+}
