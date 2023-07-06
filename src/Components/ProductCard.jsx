@@ -3,6 +3,8 @@ import ProductImgOne from "../img/product/product-1.jpg"
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
+import ReactStars from "react-rating-stars-component";
+
 const ProductCard = () => {
     return (
         <>
@@ -22,10 +24,19 @@ const ProductCard = () => {
                        </div>
                     </div>
                 </div>
-                <div className="d-flex flex-column justify-content-center">
-                <Link to="/product-detail"> <span className="mt-2">Buttons tweed blazer</span></Link>
-                <span>stars</span>
-                <span>prise</span>
+                <div className=" product-name d-flex flex-column">
+                    
+                    <span className="mt-2">
+                        <Link to="/product-detail">Buttons tweed blazer    </Link>
+                    </span>
+                
+                <span> <ReactStars
+                        count={5}
+                        // onChange={ratingChanged}
+                        size={24}
+                        activeColor="#ffd700"
+                    /></span>
+                <p> 200&#8377;</p>
                 </div>
                
             </div>

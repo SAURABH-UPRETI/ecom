@@ -23,17 +23,17 @@ const Navbar = () => {
                             <Link to="/">Home</Link>
                         </li>
                         <li className="p-2">
-                            <Link to="/women's">Women's</Link>
+                            <Link to="/shop">Women's</Link>
                         </li>
                         <li className="p-2">
-                            <Link to="/men's">Men's</Link>
+                            <Link to="/shop">Men's</Link>
                         </li>
                         <li className="p-2">
                             <Link to="/shop">Shop</Link>
                         </li>
-                        <li className="p-2">
+                        {/* <li className="p-2">
                             <Link to="/pages">Pages</Link>
-                        </li>
+                        </li> */}
                         <li className="p-2">
                             <Link to="/blog">Blog</Link>
                         </li>
@@ -45,12 +45,12 @@ const Navbar = () => {
                 
                 <div className="w-25 d-flex flex-row justify-content-around p-4">
                     <div className="justify-content-center">
-                        <p>login/Register</p>
+                        <p className="login">login / Register</p>
                     </div>
                     <div className="d-flex justify-content-around w-50 ">
                     <div className=""><Link to="/search"><SearchSharpIcon/></Link></div>
-                    <div><Link to="/fav"><FavoriteBorderSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
-                    <div><Link to="/cart"><ShoppingCartSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
+                    <div className="fav-notify"><Link to="/fav"><FavoriteBorderSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
+                    <div className="cart-notify"><Link to="/cart"><ShoppingCartSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
                     
                    </div>
                </div>

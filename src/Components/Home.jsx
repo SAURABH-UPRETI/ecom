@@ -17,6 +17,7 @@ import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 const Home = () => {
     var settings = {
         dots: true,
+        arrow:false,
         infinite: true,
         speed: 2000,
         slidesToShow: 1,
@@ -27,20 +28,45 @@ const Home = () => {
     return (
         <>
             <div className="d-flex container-fluid flex-row section-one">
-                <div className="d-flex part-one w-50 p-2">
+                <div className="d-flex part-one w-50 p-2 position-relative">
+                    <div className="overlap">
+                    <h1>Women’s fashion</h1>
+                        <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore edolore magna aliquapendisse ultrices gravida.</p>
+                        <Link to="/shop-now">Shop now</Link>
+                </div>
                     <img src={CategoryImgOne}></img>
                 </div>
                 <div className="d-flex flex-row w-50 part-two">
-                    <div className="w-50 p-2">
-                    <img src={CategoryImgTwo}></img>
+                    <div className=" w-50 p-2 position-relative">
+                    <div className="overlap">
+                    <h5>Women’s fashion</h5>
+                        <p>100 Items</p>
+                        <Link to="/shop-now">Shop now</Link>
+                        </div>  
+                        <img src={CategoryImgTwo}></img>
                     </div>
-                    <div className="w-50 p-2">
+                    <div className="w-50 p-2 position-relative">
+                    <div className="overlap">
+                    <h5>Women’s fashion</h5>
+                        <p>100 Items </p>
+                        <Link to="/shop-now">Shop now</Link>
+                        </div>  
                     <img src={CategoryImgThree}></img>
                     </div>
-                    <div className="w-50 p-2">
+                    <div className="w-50 p-2 position-relative">
+                    <div className="overlap">
+                    <h5>Women’s fashion</h5>
+                        <p>100 Items </p>
+                        <Link to="/shop-now">Shop now</Link>
+                        </div>  
                     <img src={CategoryImgFour}></img>
                     </div>
-                    <div className="w-50 p-2">
+                    <div className="w-50 p-2 position-relative">
+                    <div className="overlap">
+                    <h5>Women’s fashion</h5>
+                        <p>100 Items </p>
+                        <Link to="/shop-now">Shop now</Link>
+                        </div>  
                     <img src={CategoryImgFive}></img>
                     </div>
                 </div>
@@ -84,24 +110,24 @@ const Home = () => {
             <div className=" container-fluid section-three mt-5">
                 <div className="section-three-slider w-25 mx-auto">
                 <Slider {...settings}>
-      <div>
-          <span>The Chloe Collection </span>
-        <h1>The Project Jacket</h1>
-         <Link to="/shop-now">Shop now</Link>
-      </div>
-      <div>
-          <span>The Chloe Collection </span>
-        <h1>The Project Jacket</h1>
-         <Link to="/shop-now">Shop now</Link>
-      </div>
+                            <div>
+                                <span>The Chloe Collection </span>
+                                <h1>The Project Jacket</h1>
+                                <Link to="/shop-now">Shop now</Link>
+                            </div>
+                            <div>
+                                <span>The Chloe Collection </span>
+                                <h1>The Project Jacket</h1>
+                                <Link to="/shop-now">Shop now</Link>
+                            </div>
+                            
+                            <div>
+                                <span>The Chloe Collection </span>
+                                <h1>The Project Jacket</h1>
+                                <Link to="/shop-now">Shop now</Link>
+                            </div>
       
-      <div>
-          <span>The Chloe Collection </span>
-        <h1>The Project Jacket</h1>
-         <Link to="/shop-now">Shop now</Link>
-      </div>
-      
-    </Slider>
+                </Slider>
           </div>
             </div>
             <div className="d-flex flex-column section-four w-75 mx-auto  mt-5">

@@ -10,9 +10,9 @@ import { Label } from "@mui/icons-material";
 import { useState } from "react";
 
 function ProductDetails() {
-    const rev = " Review"
-    const des = " description"
-    const spec = "specification "
+    const rev = " Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret. Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+    const des = " Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret.Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+    const spec = "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret. Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. "
     const revHeading = " Review"
     const desHeading = " Description"
     const specHeading = "Specification "
@@ -100,11 +100,11 @@ function ProductDetails() {
         ))}
       </Carousel>
               </div>
-              <div className="d-flex flex-column text-start p-4 container-fluid">
+              <div className="product-detail d-flex flex-column p-4 container-fluid">
                   <h2>ESSENTIAL STRUCTURED BLAZER</h2>
                   <span>Brand: SKMEIMore Men Watches from SKMEI</span>
                   <span>     ( 138 reviews )</span>
-                  <h3 className="mt-3">$ 75.0 $ 83.0</h3>
+                  <h3 className="mt-3">600 &#8377;</h3>
                   <p className="mt-3">
                   Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt.
                   </p>

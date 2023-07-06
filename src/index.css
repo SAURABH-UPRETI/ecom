@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,100;1,200;1,300;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,100;1,200;1,300;1,700;1,800&display=swap');
 *{
   padding: 0;
   margin: 0;
   font-family:"Montserrat", sans-serif ;
 }
-
+ a:link{
+  text-decoration: none;
+  color: black !important;
+ }
 /* 
 
 Navbar css
@@ -31,12 +35,39 @@ Navbar css
   color: black;
   font-weight: 400;
 }
-
+.cart-notify{
+  position: relative;
+}
+.cart-notify span{
+  position: absolute;
+  font-size: .6rem;
+  top: -10%;
+  right: -72%;
+  border-radius: 50%;
+  background-color: black !important;
+}
+.fav-notify{
+  position: relative;
+}
+.fav-notify span{
+  font-size: .6rem;
+  position: absolute;
+  top: -10%;
+  right: -70%;
+  border-radius: 50%;
+  background-color: black !important;
+}
 .nav ul li a:hover{
     border-bottom: 3px solid rgb(202,21,21);   
     color: blue;
 }
-
+.nav .login{
+  cursor: pointer;
+  font-size: .8rem;
+}
+.section-one{
+  height: 85vh;
+}
 
 .section-one .part-one img{
   width: 100%;
@@ -45,9 +76,9 @@ Navbar css
 .section-one .part-two{
   flex-wrap: wrap;
 }
-
 .section-one .part-two img{
   width: 100%;
+  height: 100%;
 }
 
 .section-two{
@@ -88,22 +119,33 @@ Navbar css
 }
 .product-card:hover .moving-div{
       bottom: 10%;
-     transition: 1s;
+     transition: .3s;
 }
 
 .section-three{
   border: 1px solid transparent;
-  height: 25rem;
+  height: 70vh;
   background-size: contain;
   background-image: url("./img/banner/banner-1.jpg");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: 100% 70vh;
 }
 .section-three .section-three-slider{
- border: 1px solid;
   margin-top: 8%;
+  width: 40rem !important;
+  height: 11rem;
 }
-
+.slick-slide{
+  position: relative;
+  height: 11rem;
+}
+.slick-slide span{
+ color: rgb(202,21,21);
+  text-align: center;
+  position: absolute;
+  left: 38%;
+  font-weight: 600;
+}
 .section-four span{
     font-size: 2rem;
     border-bottom: 3px solid rgb(202,21,21);
@@ -194,7 +236,7 @@ Navbar css
 .product-review .product-review-head span{
       cursor: pointer;
 }
-.product-review .product-review-head span:hover{
+.product-review .product-review-head span:checked{
   color: red;
 
 }
@@ -422,4 +464,70 @@ height: 3px;
 width: 110px;
 background: #ca1515;
 content: ""
+}
+.product-name p, span{
+  margin: auto;
+}
+.product-name span a:link{
+  text-decoration: none;
+  color: black !important;
+}
+a:link{
+  color: black !important;
+}
+.product-name p{
+  font-weight: 600;
+}
+.product-detail >span{
+
+  border: 1px solid;
+  float: left;
+}
+.product-review-head span{
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+.section-three-slider h1{
+  font-family: "Cookie", cursive !important;
+  font-size: 5rem;
+  padding-top: 2rem;
+  padding-left: 6rem !important;
+}
+
+.section-three-slider a:link{
+  position: absolute;
+  left: 43.5%;
+  bottom: 5%;
+  font-weight: 600;
+  border-bottom: 3px solid rgb(202,21,21) ;
+}
+.slick-dots li button:before{
+  color: rgb(202,21,21) !important;
+  font-size: 1rem;
+}
+.slick-dots li button{
+  opacity: 1 !important;
+}
+
+.section-one .overlap{
+  position: absolute;
+  padding: 3%;
+  width: 63%;
+  top: 30%;
+}
+.section-one .overlap h1{
+  font-family: "Cookie" !important;
+  font-size: 5rem;
+}
+
+.section-one .overlap a:link{
+  font-weight: 600;
+  border-bottom: 3px solid rgb(202,21,21) ;
+}
+.section-one .overlap h5{
+  font-weight: 600;
+}
+.section-one .part-two .overlap{
+  padding:3%;
 }

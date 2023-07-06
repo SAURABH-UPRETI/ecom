@@ -202,8 +202,8 @@ function Shop() {
         </div>
        
           </div>
-          <div className="w-75">
-          <div className=" d-flex flex-row flex-wrap  ">
+          <div className="w-75 ">
+          <div className=" d-flex flex-row justify-content-around flex-wrap  ">
               <ProductCard/>
               <ProductCard />
               <ProductCard />
@@ -212,15 +212,11 @@ function Shop() {
               <ProductCard />
               <ProductCard/>
               <ProductCard />
-              <ProductCard />
-              <ProductCard/>
-              <ProductCard/>
-              <ProductCard />
-              
+              <ProductCard /> 
               </div>
               <div>
                   
-          <div className="page-num ">
+          <div className="page-num mt-5">
           <Pagination
       page={page}
       count={10}

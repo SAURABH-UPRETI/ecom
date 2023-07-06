@@ -14,7 +14,7 @@ function Footer() {
   const myImages = [Image1, Image2, Image3, Image4, Image5];
   return (
     <>
-      <div className="contrainerfluid border mt-4 Footer-image">
+      <div className="contrainerfluid border mt-5 Footer-image">
         {myImages.map((image, index) => (
           <img src={image} alt={`Image ${index + 1}`} key={index} />
         ))}
@@ -85,7 +85,7 @@ function Footer() {
         <hr />
         <p className="text-center">
           Copyright © 2023 All rights reserved | This template is made with by
-          Colorlib
+          Saurabh Upreti
         </p>
       </div>
     </>
