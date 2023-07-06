@@ -16,11 +16,13 @@ Navbar css
 */
 
 
- ul{
+ ul ,li{
   list-style: none;
   color: black;
+  height: 100%;
 }
 .nav{
+  height: 5rem;
   -webkit-box-shadow: 1px 7px 5px 0px rgba(232,227,232,1);
   -moz-box-shadow: 1px 7px 5px 0px rgba(232,227,232,1);
   box-shadow: 1px 7px 5px 0px rgba(232,227,232,1);
@@ -29,12 +31,7 @@ Navbar css
   color: black !important;
   cursor: pointer !important;
 }
-.nav ul li a:link{
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
-}
+
 .cart-notify{
   position: relative;
 }
@@ -57,14 +54,18 @@ Navbar css
   border-radius: 50%;
   background-color: black !important;
 }
-.nav ul li a:hover{
+.nav ul li p{
+  color: black;
+}
+.nav ul li p:hover{
     border-bottom: 3px solid rgb(202,21,21);   
-    color: blue;
+
 }
 .nav .login{
   cursor: pointer;
   font-size: .8rem;
 }
+
 .section-one{
   height: 85vh;
 }
@@ -85,15 +86,20 @@ Navbar css
   width: 80%;
   margin: auto;
 }
-.section-two .custom-h3{
+.section-two-nav {
+  height: 3.5rem;
+}
+.section-two .custom-h4{
   border-bottom: 3px solid rgb(202,21,21);
   margin-right: 10px;   
 }
-
+.section-two p{
+  color: black;
+}
 .section-two ul li a:link{
   text-decoration: none;
 }
-.section-two ul li a:hover{
+.section-two ul li p:hover{
   border-bottom: 3px solid rgb(202,21,21);
 }
 
@@ -124,7 +130,7 @@ Navbar css
 
 .section-three{
   border: 1px solid transparent;
-  height: 70vh;
+  height: 65vh;
   background-size: contain;
   background-image: url("./img/banner/banner-1.jpg");
   background-repeat: no-repeat;
@@ -214,6 +220,10 @@ Navbar css
   background-color: white;
   margin: .5rem;
   border: none;
+  color:#979191 ;
+}
+.product-details-cart .two span{
+  color:#979191 ;
 }
 .product-details-cart .three{
   width: 25%;
@@ -221,12 +231,17 @@ Navbar css
   color: white;
   background-color: rgb(202,21,21);
   border-radius: 1.5rem  1.5rem ;
+  font-weight: 600;
+  padding: .7rem;
 }
 .product-details-cart .four,.five{
-  border: 1px solid;
+  border: 1px solid #e1e1e1;
   border-radius: 50%;
   cursor: pointer;
   width: 3rem;
+  padding: .7rem;
+  color:#979191 ;
+
 }
  .product-spec .product-color >input{
    width: 2rem !important;
@@ -468,20 +483,21 @@ content: ""
 .product-name p, span{
   margin: auto;
 }
-.product-name span a:link{
-  text-decoration: none;
-  color: black !important;
+.product-name >p{
+  color: black;
+  font-weight: 700 !important;
+  font-size: 1.3rem;
 }
-a:link{
-  color: black !important;
+.product-name span p{
+  color: black 
 }
 .product-name p{
   font-weight: 600;
 }
-.product-detail >span{
-
-  border: 1px solid;
-  float: left;
+.product-detail .price{
+  color:#ca1515;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 .product-review-head span{
   font-weight: 700;
@@ -530,4 +546,145 @@ a:link{
 }
 .section-one .part-two .overlap{
   padding:3%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.google-map {
+  position: relative;
+  text-align: center;
+  /* height: 500px; */
+  width: 50%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 600px;
+}
+
+.gmap_iframe {
+  width: 100% !important;
+  height: 600px !important;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.login-background-img{
+  background-image: url(./img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  height: 100vh;
+  opacity: 0.86;
+}
+.login-main-box{
+  /* background-color: white; */
+  border: 2px solid rgb(0, 255, 64);
+  color:antiquewhite;
+  border-radius: 3%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  
+  transform: translate(-50%,-50%);
+
+}
+.login-icon{
+  position: absolute;
+  display: block;
+  width: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #201515;
+}
+.billing-detail{
+  height: fit-content;
+}
+.billing-detail .billing-detail-part-one {
+  width: 65%;
+}
+.billing-detail .billing-detail-part-two{
+  width: 35%;
+}
+.billing-detail input{
+  height: 3rem;
+  border: 1px solid #e1e1e1;
+  padding: .5rem;
+}
+.billing-detail .check{
+  height: auto !important;
+  padding:-.4rem;
+}
+.billing-detail .bill{
+  background-color: rgb(245,245,245);
+  height: 35%;
+  width: 100%;
+}
+.billing-detail .bill .check{
+  height: auto !important;
+  padding:-.4rem;
+}
+.billing-detail .bill .form-check label{
+  font-size: .9rem !important;
+  font-weight: 600;
+}
+.billing-detail .bill button{
+  border: none;
+  padding: .8rem;
+  border-radius: 2rem;
+  background-color: rgb(202,21,21);
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+.billing-detail span{
+  color: #ca1515  ;
+}
+.billing-detail .bill button:hover{
+  transform: scale(1.05);
+  transition: .5s;
+}
+
+.billing-detail .bill .sub-total,.total{
+  font-weight: 600;
+}
+.control-dots{
+  display: none !important;
+}
+.carousel-status{
+  display: none !important;
 }

@@ -70,7 +70,7 @@ function Shop() {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="flush-headingThree">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      MEN
+                      KIDS
                     </button>
                   </h2>
                   <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -95,8 +95,8 @@ function Shop() {
               className="inpt"
           key={index}
           type="range"
-          min={0}
-          max={100}
+          min={100}
+          max={1000}
           value={value}
           onChange={(e) => handleChange(index, e)}
                     

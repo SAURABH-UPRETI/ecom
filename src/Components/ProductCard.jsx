@@ -27,7 +27,7 @@ const ProductCard = () => {
                 <div className=" product-name d-flex flex-column">
                     
                     <span className="mt-2">
-                        <Link to="/product-detail">Buttons tweed blazer    </Link>
+                        <Link to="/product-detail"><p>Buttons tweed blazer </p>   </Link>
                     </span>
                 
                 <span> <ReactStars
@@ -35,7 +35,8 @@ const ProductCard = () => {
                         // onChange={ratingChanged}
                         size={24}
                         activeColor="#ffd700"
-                    /></span>
+                    />
+                    </span>
                 <p> 200&#8377;</p>
                 </div>
                

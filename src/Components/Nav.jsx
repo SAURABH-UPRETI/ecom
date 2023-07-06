@@ -8,6 +8,10 @@ import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import FavoriteBorderSharpIcon from '@mui/icons-material/FavoriteBorderSharp';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import Shop from "./Shop";
+import Login from "./Login";
+import Signup from "./Sign-up";
+import Contact from "./Contact";
+import Checkout from "./Checkout";
 
 
 const Navbar = () => {
@@ -20,32 +24,34 @@ const Navbar = () => {
                 <div className="w-50">
                     <ul className="d-flex flex-row justify-content-start p-3 text-uppercase">
                         <li className="p-2">
-                            <Link to="/">Home</Link>
+                            <Link to="/"><p>Home</p></Link>
                         </li>
                         <li className="p-2">
-                            <Link to="/shop">Women's</Link>
+                            <Link to="/shop"><p>Women's</p></Link>
                         </li>
                         <li className="p-2">
-                            <Link to="/shop">Men's</Link>
+                            <Link to="/shop"><p>Men's</p></Link>
                         </li>
                         <li className="p-2">
-                            <Link to="/shop">Shop</Link>
+                            <Link to="/shop"><p>Shop</p></Link>
                         </li>
                         {/* <li className="p-2">
                             <Link to="/pages">Pages</Link>
                         </li> */}
                         <li className="p-2">
-                            <Link to="/blog">Blog</Link>
+                            <Link to="/blog"><p>Blog</p></Link>
                         </li>
                         <li className="p-2">
-                            <Link to="/cotact">Contact</Link>
+                            <Link to="/contact"><p>Contact</p></Link>
                         </li>
                     </ul>
                 </div>
                 
                 <div className="w-25 d-flex flex-row justify-content-around p-4">
                     <div className="justify-content-center">
-                        <p className="login">login / Register</p>
+                        <div className="d-flex flex-row login">
+                            <Link to="/login"><p>login</p></Link> / <Link to="/signup"><p> Register</p></Link>
+                            </div>
                     </div>
                     <div className="d-flex justify-content-around w-50 ">
                     <div className=""><Link to="/search"><SearchSharpIcon/></Link></div>
@@ -61,7 +67,11 @@ const Navbar = () => {
                 <Route exact path="/product-detail" element={<ProductDetails />}></Route>
                 <Route exact path="/cart" element={<ShopCart />}></Route>
                 <Route exact path="/blog" element={<Blog/>}></Route>
-                <Route exact path="/shop" element={<Shop/>}></Route>
+                <Route exact path="/shop" element={<Shop />}></Route>
+                <Route exact path="/login" element={<Login/>}></Route>
+                <Route exact path="/signup" element={<Signup />}></Route>
+                <Route exact path="/contact" element={<Contact />}></Route>
+                <Route exact path="/checkout" element={<Checkout/>}></Route>
 
                 </Routes>
              

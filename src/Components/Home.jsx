@@ -72,30 +72,30 @@ const Home = () => {
                 </div>
             </div>
             <div className="d-flex flex-column section-two mt-5">
-                <div className="d-flex flex-row">
-                    <div className="d-flex w-50 text-uppercase">
-                        <h3 className="custom-h3">New  </h3><h3>Products</h3>
+                <div className="d-flex flex-row section-two-nav">
+                    <div className="d-flex w-50 text-uppercase p-2">
+                        <h4 className="custom-h4 ">New  </h4><h4 className="">Products</h4>
                     </div>
                     <div className="d-flex  w-50 ">
                         <ul className="d-flex container-fluid  justify-content-around flex-row mt-3">
                             <li>
-                                <Link to="/all">All</Link>
+                                <Link to="/all"><p>All</p></Link>
                                 
                             </li>
                             <li>
-                              <Link to="/women's"> Women's</Link>
+                              <Link to="/women's"> <p>Women's</p></Link>
                             </li>
                             <li>
-                                <Link to="/men's"> Men's</Link>
+                                <Link to="/men's"> <p>Men's</p></Link>
                             </li>
                             <li>
-                              <Link to="/kid's">   Kid's</Link>
+                              <Link to="/kid's">  <p> Kid's</p></Link>
                             </li>
                             <li>
-                            <Link to="/accessories">Accessories</Link>
+                            <Link to="/accessories"><p>Accessories</p></Link>
                             </li>
                             <li>
-                                    <Link to="/cosmetics"> Cosmetics</Link>
+                                    <Link to="/cosmetics"> <p>Cosmetics</p></Link>
                             </li>
                             </ul>
                     </div>
