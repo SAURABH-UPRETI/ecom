@@ -17,3 +17,36 @@ padding: 4%;
     position: absolute;
      top: 90%;
 }
+.Product-blog-detail-imgdiv{
+position: relative;
+margin-bottom: 50px;
+
+}
+.Product-blog-detail-textdiv{
+position: absolute;
+background-color: white;
+width: 45%;
+top: 75%;
+}
+.product-blog-txt {
+    width: 90%;
+    padding: 10px;
+}
+hr{
+    border: 3px solid rgb(216, 26, 26);
+
+}
+.Blog-details-card{
+    cursor: pointer;
+}
+.Blog-details-card img{
+    width: 80%;
+}
+
+h5{
+    text-decoration: underline;  
+    text-decoration-color: red
+}
+.Blog-comment-img2{
+    margin-left: 100px;
+}

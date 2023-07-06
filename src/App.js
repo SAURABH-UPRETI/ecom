@@ -1,6 +1,5 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
 import Navbar from "./Components/Nav";
 import Footer from "./Components/Footer";
 

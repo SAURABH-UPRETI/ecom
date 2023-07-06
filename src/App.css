@@ -23,7 +23,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.google-map {
+  position: relative;
+  text-align: center;
+  /* height: 500px; */
+  width: 50%;
+}
 
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 600px;
+}
+
+.gmap_iframe {
+  width: 100% !important;
+  height: 600px !important;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +51,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+.login-background-img{
+  background-image: url(./img/login/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  height: 100vh;
+  opacity: 0.86;
+}
+.login-main-box{
+  /* background-color: white; */
+  border: 2px solid rgb(0, 255, 64);
+  color:antiquewhite;
+  border-radius: 3%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  
+  transform: translate(-50%,-50%);
+
+}
+.login-icon{
+  position: absolute;
+  display: block;
+  width: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #201515;
 }
