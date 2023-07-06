@@ -351,3 +351,75 @@ padding: 4%;
   transform: rotate(270deg);
   float: right;
 }
+.categories{
+  position: relative;
+}
+.categories h4{
+  font-weight: 600;
+}
+.categories h4:after{
+    position: absolute;
+left: 5%;
+bottom: 20%;
+height: 3px;
+width: 110px;
+background: #ca1515;
+content: ""
+}
+.price{
+  position: relative;
+}
+.price h5{
+  font-weight: 600;
+}
+.price h5:after{
+    position: absolute;
+left: 5%;
+top: 24%;
+height: 3px;
+width: 110px;
+background: #ca1515;
+content: ""
+}
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+  border: 2px solid rgb(255,0,0) !important;
+  color: black !important;
+  font-weight: 600 !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+.price input{
+  background-color: red !important;
+  border: 1px solid !important;
+}
+.shop-by-size {
+  position: relative;
+}
+.shop-by-size h5{
+  font-weight: 600;
+}
+.shop-by-size h5:after{
+    position: absolute;
+left: 0%;
+top: 14%;
+height: 3px;
+width: 110px;
+background: #ca1515;
+content: ""
+}
+
+.shop-by-color {
+  position: relative;
+}
+.shop-by-color h5{
+  font-weight: 600;
+}
+.shop-by-color h5:after{
+    position: absolute;
+left: 0%;
+top: 14%;
+height: 3px;
+width: 110px;
+background: #ca1515;
+content: ""
+}
