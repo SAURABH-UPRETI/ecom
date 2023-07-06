@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ecom/static/css/main.eeb8dcd8.css",
+    "main.js": "/ecom/static/js/main.d78cc5ee.js",
+    "static/js/787.34115356.chunk.js": "/ecom/static/js/787.34115356.chunk.js",
+    "static/media/banner-1.jpg": "/ecom/static/media/banner-1.0de31bd2b1b7f7686f11.jpg",
+    "static/media/category-1.jpg": "/ecom/static/media/category-1.5968be36f1b661b1d108.jpg",
+    "static/media/blog-6.jpg": "/ecom/static/media/blog-6.603170a33059b102ce84.jpg",
+    "static/media/blog-1.jpg": "/ecom/static/media/blog-1.9653d98d56ee9cf58f17.jpg",
+    "static/media/discount.jpg": "/ecom/static/media/discount.dbbc549616decf30a778.jpg",
+    "static/media/blog-2.jpg": "/ecom/static/media/blog-2.11f1f2eeb91005aef0d4.jpg",
+    "static/media/category-2.jpg": "/ecom/static/media/category-2.dc5f9a603ed2fc1618f1.jpg",
+    "static/media/blog-7.jpg": "/ecom/static/media/blog-7.67c5b18a9ebfaae3f668.jpg",
+    "static/media/blog-8.jpg": "/ecom/static/media/blog-8.cb87d3ca5882b38fba64.jpg",
+    "static/media/product-1.jpg": "/ecom/static/media/product-1.a6e95ba56bdaff0571c5.jpg",
+    "static/media/insta-3.jpg": "/ecom/static/media/insta-3.8cb740870e1026f77d35.jpg",
+    "static/media/blog-5.jpg": "/ecom/static/media/blog-5.2b18bdd301cd530f366e.jpg",
+    "static/media/category-5.jpg": "/ecom/static/media/category-5.4874d09089dc7ad3725e.jpg",
+    "static/media/blog-9.jpg": "/ecom/static/media/blog-9.51376a01902794a02ef3.jpg",
+    "static/media/insta-4.jpg": "/ecom/static/media/insta-4.042af8bc378897bd82c4.jpg",
+    "static/media/insta-2.jpg": "/ecom/static/media/insta-2.525837cac0a756a4546b.jpg",
+    "static/media/blog-3.jpg": "/ecom/static/media/blog-3.07dbc08ee349ac191120.jpg",
+    "static/media/category-3.jpg": "/ecom/static/media/category-3.2186a2d92919c223d476.jpg",
+    "static/media/blog-10.jpg": "/ecom/static/media/blog-10.435eb101b171862e8719.jpg",
+    "static/media/insta-5.jpg": "/ecom/static/media/insta-5.19870c8d05277fbeb9f3.jpg",
+    "static/media/product-3.jpg": "/ecom/static/media/product-3.2fb5b21662c2a99e19db.jpg",
+    "static/media/blog-4.jpg": "/ecom/static/media/blog-4.52d50b5659964124121a.jpg",
+    "static/media/insta-1.jpg": "/ecom/static/media/insta-1.b7262f816f91d8192e8a.jpg",
+    "static/media/product-2.jpg": "/ecom/static/media/product-2.b4dd7a14947821cefc8f.jpg",
+    "static/media/product-4.jpg": "/ecom/static/media/product-4.40e6c3e08679197bc1d7.jpg",
+    "static/media/category-4.jpg": "/ecom/static/media/category-4.d1e79e49b6d3343d9d4f.jpg",
+    "static/media/shop-1.jpg": "/ecom/static/media/shop-1.1952dad9e7fa13a9f020.jpg",
+    "index.html": "/ecom/index.html",
+    "main.eeb8dcd8.css.map": "/ecom/static/css/main.eeb8dcd8.css.map",
+    "main.d78cc5ee.js.map": "/ecom/static/js/main.d78cc5ee.js.map",
+    "787.34115356.chunk.js.map": "/ecom/static/js/787.34115356.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eeb8dcd8.css",
+    "static/js/main.d78cc5ee.js"
+  ]
+}
