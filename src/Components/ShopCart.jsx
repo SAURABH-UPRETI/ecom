@@ -4,9 +4,9 @@ import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import RotateRightOutlinedIcon from '@mui/icons-material/RotateRightOutlined';
 import cartImg1 from "../img/product/product-1.jpg"
 import SmallProductCard from "./SmallProductCard";
+
 function ShopCart() {
   const [quantity, setQuantity] = useState(0);
-
   const HandleIncrement = () => {
     setQuantity(function (prevCount) {
         return (prevCount += 1);
@@ -42,7 +42,7 @@ const HandleDecrement = () => {
         <hr/>
         <tr>
           <td>
-           <SmallProductCard></SmallProductCard>
+            <SmallProductCard width ="100%" border="2px solid"></SmallProductCard>
             
           </td>
           <td>

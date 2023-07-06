@@ -3,6 +3,13 @@ import Home from "./Home";
 import Logo from "../img/logo.png"
 import ProductDetails from "./ProductDetails";
 import ShopCart from "./ShopCart";
+import Blog from "./Blog";
+import SearchSharpIcon from '@mui/icons-material/SearchSharp';
+import FavoriteBorderSharpIcon from '@mui/icons-material/FavoriteBorderSharp';
+import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
+import Shop from "./Shop";
+
+
 const Navbar = () => {
     return (
         <>
@@ -36,20 +43,25 @@ const Navbar = () => {
                     </ul>
                 </div>
                 
-                <div className="w-25 d-flex flex-row justify-content-between p-4">
-                    <div className="justify-content-center ">
+                <div className="w-25 d-flex flex-row justify-content-around p-4">
+                    <div className="justify-content-center">
                         <p>login/Register</p>
                     </div>
-                    <div>i1</div>
-                    <div>i2</div>
-                    <div>i3</div>
+                    <div className="d-flex justify-content-around w-50 ">
+                    <div className=""><Link to="/search"><SearchSharpIcon/></Link></div>
+                    <div><Link to="/fav"><FavoriteBorderSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
+                    <div><Link to="/cart"><ShoppingCartSharpIcon/><span class="badge text-bg-secondary">4</span></Link></div>
+                    
+                   </div>
                </div>
                 </div>
                 
                 <Routes>
                 <Route exact path="/" element={<Home></Home>}></Route>
                 <Route exact path="/product-detail" element={<ProductDetails />}></Route>
-                <Route exact path="/cart" element={<ShopCart/>}></Route>
+                <Route exact path="/cart" element={<ShopCart />}></Route>
+                <Route exact path="/blog" element={<Blog/>}></Route>
+                <Route exact path="/shop" element={<Shop/>}></Route>
 
                 </Routes>
              

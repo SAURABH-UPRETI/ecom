@@ -10,7 +10,10 @@ import "../../node_modules/react-slick/dist/react-slick"
 import React from "react";
 import Slider from "react-slick";
 import SmallProductCard from "./SmallProductCard";
-
+import DirectionsCarFilledSharpIcon from '@mui/icons-material/DirectionsCarFilledSharp';
+import LocalAtmIcon from '@mui/icons-material/LocalAtm';
+import SupportIcon from '@mui/icons-material/Support';
+import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 const Home = () => {
     var settings = {
         dots: true,
@@ -19,8 +22,8 @@ const Home = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed:3000
-      };
+        autoplaySpeed: 3000
+    };
     return (
         <>
             <div className="d-flex container-fluid flex-row section-one">
@@ -131,40 +134,48 @@ const Home = () => {
 
             </div>
             <div className="d-flex flex-row section-six w-75 mt-5 mx-auto justify-content-between">
-                <div className="d-flex flex-row ccard "  >
-                    <div className="w-25">
-                        icon
+                <div className="d-flex flex-row ccard p-2"  >
+                    <div className="w-25 ">
+                        <DirectionsCarFilledSharpIcon/>
                    </div>
-                    <div className="w-75 justify-content-center p-1">
-                        <span className=""> Free Shipping </span>
-                        <span> For all oder over $99</span>
+                    <div className="d-flex flex-column w-75 justify-content-center p-2">
+                        <h6 className="">
+                         Free Shippping
+                        </h6>
+                        <p> For all oder over $99</p>
                     </div>
                 </div>
-                <div className="d-flex flex-row ccard "  >
+                <div className="d-flex flex-row ccard p-2"  >
                     <div className="w-25">
-                        icon
+                    <LocalAtmIcon/>
                    </div>
-                    <div className="w-75 justify-content-center p-1">
-                        <span className="solid"> Free Shipping </span>
-                        <span> For all oder over $99</span>
+                    <div className="d-flex flex-column w-75 justify-content-center p-2">
+                    <h6 className="">
+                            Money Back Guarantee
+                        </h6>
+                        <p> If good have Problems </p>
                     </div>
                 </div>
-                <div className="d-flex flex-row ccard "  >
+                <div className="d-flex flex-row ccard p-2"  >
                     <div className="w-25">
-                        icon
+                       <SupportIcon/>
                    </div>
-                    <div className="w-75 justify-content-center p-1">
-                        <span className="solid"> Free Shipping </span>
-                        <span> For all oder over $99</span>
+                    <div className=" d-flex flex-column w-75 justify-content-center p-2">
+                    <h6 className="">
+                    Online Support 24/7
+                        </h6>
+                        <p>Dedicated support</p>
                     </div>
                 </div>
-                <div className="d-flex flex-row ccard "  >
+                <div className="d-flex flex-row ccard p-2"  >
                     <div className="w-25">
-                        icon
+                        <HeadsetMicIcon/>
                    </div>
-                    <div className="w-75 justify-content-center p-1">
-                        <span className="solid"> Free Shipping </span>
-                        <span> For all oder over $99</span>
+                    <div className=" d-flex flex-column w-75 justify-content-center p-2">
+                    <h6 className="">
+                    Payment Secure
+                        </h6>
+                        <span>100% secure payment</span>
                     </div>
                 </div>
           

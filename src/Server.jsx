@@ -1,8 +1,8 @@
-const express = require("express");
-require("./Connection");
-const path = require("path");
+require("./Connection.jsx");
+const path = require('path');
+const express = require('express');
 
-const bodyParser = require("body-parser");
+const PORT = process.env.PORT;
 const app = express();
 
 app.listen(PORT, () => {
